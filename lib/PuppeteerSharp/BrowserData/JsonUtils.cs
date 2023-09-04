@@ -19,5 +19,14 @@ namespace PuppeteerSharp.BrowserData
             using var client = new HttpClient();
             return client.GetStringAsync(url);
         }
+
+        // This works!
+
+        // internal static async Task<string> GetTextAsync(string url)
+        // {
+        //     using var client = new HttpClient();
+        //     var result = await client.GetStringAsync(url).ConfigureAwait(false);
+        //     return result;
+        // }
     }
 }
